@@ -371,14 +371,7 @@ ul.row {
     list-style: none;
 }
 
-/* .row::after {
-    content: '';
-    display: table;
-    clear: both;
-} */
-
 [class*='col-'] {
-    /* float: left; */
     margin: 1rem;
 }
 
@@ -393,16 +386,12 @@ ul.row {
 /* Navbar
       ============================= */
 
-.navbar-menu {
-    float: right;
-}
-
 .nav {
     display: flex;
-    /* margin: 0;
+    margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center; */
+    text-align: center;
 }
 
 .nav .nav-item {
@@ -410,12 +399,10 @@ ul.row {
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
-    /* display: var(--nav-item-display); */
 }
 
 .nav .nav-item+.nav-item {
     margin: var(--nav-item-margin);
-
 }
 
 .nav .nav-link {
@@ -447,16 +434,17 @@ ul.row {
 
 /* Header
       ============================= */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
 
 .header {
     padding: var(--header-padding);
     position: relative;
     z-index: 3;
-    background: transparent;
+    background: transparent !important;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Footer
@@ -557,12 +545,15 @@ ul.row {
     padding: 10rem 40rem 2rem 0;
 }
 
-/* Section Latest news ============================= */
+/* Section Latest news
+    ============================= */
+
 .section-latest-news .row {
     flex-direction: row-reverse;
 }
 
-/* Section SERVICES ============================= */
+/* Section SERVICES
+    ============================= */
 
 .section-services .row {
     flex-wrap: wrap;
